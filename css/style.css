@@ -227,6 +227,8 @@ body{
 .carousel-cell img{
     border-radius: 5px;
     height: 500px;
+    left: 20%;
+    position: absolute;
 }
 .carousel {
     background: #ffd31d;
@@ -240,7 +242,9 @@ body{
     position: absolute;
     
 }
-
+.card-des{
+    font-size: 20px;
+}
 /* FOOTER */
 .footer{
     margin-top: 10px;
@@ -267,6 +271,7 @@ body{
     position: relative;
     bottom: 0;
     padding-bottom: 10px;
+    padding-top: 70px;
 }
 
 .copy-text {
