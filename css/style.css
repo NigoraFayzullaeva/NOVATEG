@@ -239,7 +239,8 @@ body{
     position: absolute;
 }
 .carousel {
-    background: #ffd31d;
+    background: rgb(253,187,45);
+background: linear-gradient(35deg, rgba(253,187,45,1) 49%, rgba(195,34,162,1) 76%);
     height: 500px;
     width: 100%;
 }
