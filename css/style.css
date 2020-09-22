@@ -13,6 +13,9 @@ body{
     max-width: 990px;
     margin: auto;
 }
+.flickity-page-dots .dot {
+    background: purple;
+}
 .header{
     background-image: linear-gradient(rgba(109,48,57,.6),rgba(109,48,57,.25)),url(../img/header-img.jpg);
     opacity: 0.9;
@@ -20,14 +23,17 @@ body{
     background-size: cover;
     background-attachment: fixed;
     width: 100%;
-    height: 100vh;
+    min-height: 60vh;
     border-bottom-left-radius: 1000% 1000px;
     border-bottom-right-radius: 1000% 1000px;
 }
 .menu-main{
+    /* position: fixed; */
+    top: 0;
+    left: 0;
+    z-index: 99999;
     padding-top: 20px;
     padding-bottom: 20px;
-    
     display: flex;
     justify-content: space-around;
     width: 100%;
@@ -93,7 +99,8 @@ body{
 }
 .header-title{
     color: #000;
-    margin-top: 150px;
+    margin-top: 60px;
+    padding-top: 60px;
 }
 .header-text{
     font-size: 36px;
@@ -223,6 +230,7 @@ body{
     background: #ffd31d;
     margin-top: 100px;
     margin-bottom: 100px;
+    padding: 60px 0;
 }
 .carousel-cell img{
     border-radius: 5px;
@@ -287,15 +295,126 @@ body{
 .novateg-style, .tel-num{
     color: rgb(66, 3, 66);
 }
+@media (max-width: 1024px){
+    .header-logo {
+        font-size: 26px;
+    }
+    .header-text {
+        line-height: 60px;
+    }
+    .card-title {
+        font-size: 22px;
+    }
+    .about-des {
+        font-size: 13px;
+        line-height: 23px;
+        margin-bottom: 10px;
+    }
+    .inner-content{
+        padding: 65px;
+    }
+    .inner-content-2{
+        padding: 115px;
+    }
+    .about-nov {
+        font-size: 37px;
+        margin-bottom: 16px;
+    }
+    .inner-content-2 h3 {
+        font-size: 29px;
+        margin-bottom: 16px;
+    }
+    .carousel-cell img {
+        left: 7%;
+    }
+}
 @media (max-width: 900px){
     .single-service-type{
         max-width: 50%;
         width: 50%;
     }
 }
-@media (max-width: 767px){
+@media (max-width: 768px){
+    .header{
+        min-height: 71vh;
+    }
+    .navbar-item{
+        font-size: 18px;
+    }
+    .header-text{
+        line-height: 53px;
+        font-size: 29px;
+        margin-bottom: 15px;
+    }
     .single-service-type{
         width: 100%;
         max-width: 100%;
     }
+    .inner-content {
+        padding: 23px;
+    }
+    .inner-content-2 {
+        padding: 69px;
+    }
+    .single-service-type ul li {
+        margin-bottom: 5px;
+        font-size: 15px;
+    }
+    .service-content{
+        padding: 17px;
+    margin-bottom: 24px;
+    }
+    .service-title{
+        font-size: 19px;
+    }
+    .carousel-cell img {
+        left: 0%;
+        max-width: 100%;
+    }
+    .our-works {
+        margin-top: 65px;
+        margin-bottom: 45px;
+        padding: 56px 0;
+    }
+    .card-title {
+        font-size: 19px;
+    }
+    .card-des {
+        font-size: 17px;
+    }
+    .col-sm-6{
+        height: 540px;
+    }
+}
+@media (max-width: 425px){
+    .carousel-cell img{
+        height: 245px;
+    }
+    .flickity-enabled.is-draggable {
+        height: 250px;
+    }
+    .our-works {
+        margin-top: 0px;
+        margin-bottom: 0px;
+        padding: 35px 0;
+    }
+    .flickity-prev-next-button.previous,
+    .flickity-prev-next-button.next {
+        display: none;
+    }
+    .card-content {
+        margin: 25px 0;
+    }
+    .card-content-img {
+        height: 65px;
+        width: 65px;
+        margin-bottom: 13px;
+    }
+    .card-des {
+        font-size: 15px;
+    }
+    .card-title{
+        font-size: 18px;
+    }
+    
 }
