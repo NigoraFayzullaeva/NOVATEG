@@ -23,12 +23,12 @@ body{
     background-size: cover;
     background-attachment: fixed;
     width: 100%;
-    min-height: 60vh;
+    min-height: 45vh;
     border-bottom-left-radius: 1000% 1000px;
     border-bottom-right-radius: 1000% 1000px;
 }
 .menu-main{
-    /* position: fixed; */
+    position: fixed;
     top: 0;
     left: 0;
     z-index: 99999;
@@ -76,6 +76,9 @@ body{
     color: rgb(66, 3, 66);
     font-weight: 500;
 }
+.header-buttons{
+    display: none;
+}
 .portfolio-button{
     font-size: 18px;
     color: rgb(66, 3, 66);
@@ -100,7 +103,6 @@ body{
 .header-title{
     color: #000;
     margin-top: 60px;
-    padding-top: 60px;
 }
 .header-text{
     font-size: 36px;
@@ -414,5 +416,25 @@ background: linear-gradient(35deg, rgba(253,187,45,1) 49%, rgba(195,34,162,1) 76
     .card-title{
         font-size: 18px;
     }
-    
+    .portfolio-button {
+        font-size: 10px;
+    }
+    .header-buttons{
+        display: block;
+    }
+    .header-des {
+        font-size: 16px;
+        margin-bottom: 21px;
+    }
+    .bg-color-fresh{
+        padding: 0;
+    }
+    .header-text {
+        line-height: 42px;
+        font-size: 27px;
+    }
+    .menu-main{
+        display: flex;
+    flex-direction: column;
+    }
 }
