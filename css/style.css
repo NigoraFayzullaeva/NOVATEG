@@ -421,6 +421,7 @@ background: linear-gradient(35deg, rgba(253,187,45,1) 49%, rgba(195,34,162,1) 76
     }
     .header-buttons{
         display: block;
+        padding-bottom: 45px;
     }
     .header-des {
         font-size: 15px;
@@ -442,5 +443,11 @@ background: linear-gradient(35deg, rgba(253,187,45,1) 49%, rgba(195,34,162,1) 76
     }
     .navbar-item {
         font-size: 17px;
+    }
+    .social-icons{
+        margin-left: 12px;
+    }
+    .menu-bar{
+        margin-left: 20px;
     }
 }
