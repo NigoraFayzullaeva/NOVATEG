@@ -8,11 +8,24 @@
 body{
     font-family: "Poppins", sans-serif;
 }
+
 .container{
     width: 95%;
     max-width: 990px;
     margin: auto;
+    margin-top: 2%;
 }
+.inner{
+    overflow: hidden;
+}
+.inner img{
+    transition: all 1.5s ease;
+}
+.inner:hover img{
+    transform: scale(1.5);
+}
+
+
 .flickity-page-dots .dot {
     background: purple;
 }
@@ -131,11 +144,11 @@ body{
 /* CARD-CONTENT */
 .card-content{
     text-align: center;
-    margin: 50px 0;
+    /* margin: 50px 0; */
 }
 .card-content-img{
-    height: 70px;
-    width: 70px;
+    height: 150px;
+    width: 18rem;
     margin-bottom: 20px;
 }
 .card-title{
@@ -143,6 +156,9 @@ body{
 }
 .inner-content {
     padding: 120px;
+}
+.about-us{
+    margin-top: 40px;
 }
 .about-nov{
     font-size: 48px;
@@ -223,7 +239,7 @@ body{
 }
 .inner-content-2 p {
     color: #444;
-    font-size: 14px;
+    font-size: 16px;
     line-height: 25px;
     margin-bottom: 20px;
 }
@@ -309,7 +325,7 @@ background: linear-gradient(35deg, rgba(253,187,45,1) 49%, rgba(195,34,162,1) 76
         font-size: 22px;
     }
     .about-des {
-        font-size: 13px;
+        font-size: 16px;
         line-height: 23px;
         margin-bottom: 10px;
     }
@@ -329,6 +345,10 @@ background: linear-gradient(35deg, rgba(253,187,45,1) 49%, rgba(195,34,162,1) 76
     }
     .carousel-cell img {
         left: 7%;
+    }
+    .col-sm-3{
+        flex: 0 0 50%;
+        max-width: 50%;
     }
 }
 @media (max-width: 900px){
@@ -449,5 +469,14 @@ background: linear-gradient(35deg, rgba(253,187,45,1) 49%, rgba(195,34,162,1) 76
     }
     .menu-bar{
         margin-left: 20px;
+    }
+    .col-sm-3 {
+        flex: 1 0 50%;
+        max-width: 51%;
+    }
+    .card-content-img {
+        height: 131px;
+        width: 239px;
+        margin-bottom: 13px;
     }
 }
